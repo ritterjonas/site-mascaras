@@ -1,0 +1,18 @@
+.sobre-container {
+    margin-top: 100px;
+}
+
+.show{
+    opacity: 1 !important;
+    transition: .9s ease-in-out all;
+}
+
+.step{
+    opacity: 0;
+}
+
+@media only screen and (max-width: 480px){
+    .sobre-container {
+        margin-top: 10px;
+    }    
+}

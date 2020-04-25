@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="header-desktop">
+        <div *ngIf="!scrolled" class="sticky container"><app-header></app-header></div>
+        <div *ngIf="scrolled" class="stick-background container"><app-header></app-header></div>
+    </div>
+    <div class="header-mobile">
+        <app-header></app-header>
+    </div>
+    <app-sobre class="anchor" id="home-ancora"></app-sobre>
+    <app-produtos id="produtos-ancora"></app-produtos>
+    <app-contato id="sobre-ancora"></app-contato>
+    <app-footer id="contato-ancora"></app-footer>
+</div>
