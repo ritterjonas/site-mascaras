@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 358px;
 }
 
 .title {
@@ -24,6 +23,7 @@
     font-family: open-sans, sans-serif;
     font-weight: 300;
     white-space: pre-line;
+    padding: 0 10px;
 }
 
 .btn {
@@ -51,10 +51,9 @@
 
 .img {
     border-radius: 15px;
-}
-
-@media only screen and (max-width: 480px){
-    .txt {
-        width: 300px;
-    }
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

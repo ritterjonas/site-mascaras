@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Climarq": {
+    "Climarc": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Climarq:build"
+            "browserTarget": "Climarc:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Climarq:build:production"
+              "browserTarget": "Climarc:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Climarq:build"
+            "browserTarget": "Climarc:build"
           }
         },
         "test": {
@@ -113,7 +113,7 @@
         }
       }
     },
-    "Climarq-e2e": {
+    "Climarc-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -121,11 +121,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Climarq:serve"
+            "devServerTarget": "Climarc:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Climarq:serve:production"
+              "devServerTarget": "Climarc:serve:production"
             }
           }
         },
@@ -141,5 +141,5 @@
       }
     }
   },
-  "defaultProject": "Climarq"
+  "defaultProject": "Climarc"
 }

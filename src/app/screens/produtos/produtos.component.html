@@ -1,21 +1,11 @@
-<div class="produtos-container">
+<div class="produtos-container" (window:resize)="onResize($event)">
+    <div class="navigator" (click)="prev()" [class.disabled]="!hasPrev()">&#9001;</div>
     <app-external-systems class="component"
-        fileName="ar1.png"
-        title="Split"
-        txt="Residencias e ambientes pequenos">
+        fileName="{{type.fileName}}"
+        title="{{type.title}}"
+        txt="{{type.txt}}" *ngFor="let type of getActives()">
     </app-external-systems>
-
-    <app-external-systems class="component component-mobile"
-        fileName="ar1.png"
-        title="Split Piso-Teto"
-        txt="Galpões e salas maiores">
-    </app-external-systems>
-
-    <app-external-systems class="component component-mobile"
-        fileName="ar1.png"
-        title="Split Cassete"
-        txt="Ambientes maiores">
-    </app-external-systems>
+    <div class="navigator" (click)="next()" [class.disabled]="!hasNext()">&#9002;</div>
 </div>
 
 <div class="header-banner-container">
@@ -26,7 +16,7 @@
     </app-header-banner>
 </div>
 
-<div class="features-container">
+<div class="features-container" id="sobre-ancora">
   <app-features-box
       title="Missão"
       txt="Satisfazer a necessidade do cliente da melhor forma, garantindo excelência no serviço prestado">
@@ -41,3 +31,17 @@
   </app-features-box>
 </div>
 
+<div class="clients">
+  <div class="client" style="background-image: url('assets/images/marcas/brastemp.jpg');"></div>
+  <div class="client" style="background-image: url('assets/images/marcas/carrier.jpg');"></div>
+  <div class="client" style="background-image: url('assets/images/marcas/comfee.jpg');"></div>
+  <div class="client" style="background-image: url('assets/images/marcas/consul.jpg');"></div>
+  <div class="client" style="background-image: url('assets/images/marcas/electrolux.jpg');"></div>
+  <div class="client" style="background-image: url('assets/images/marcas/fujitsu.jpg');"></div>
+  <div class="client" style="background-image: url('assets/images/marcas/gree.jpg');"></div>
+  <div class="client" style="background-image: url('assets/images/marcas/hitachi.jpg');"></div>
+  <div class="client" style="background-image: url('assets/images/marcas/lg.jpg');"></div>
+  <div class="client" style="background-image: url('assets/images/marcas/midea.jpg');"></div>
+  <div class="client" style="background-image: url('assets/images/marcas/samsung.jpg');"></div>
+  <div class="client" style="background-image: url('assets/images/marcas/springer.jpg');"></div>
+</div>

@@ -1,5 +1,5 @@
 <div class="external-systems-container">
-  <img class="img" src="assets/images/{{ fileName }}" alt="">
+  <div class="img" [style.backgroundImage]="'url(assets/images/' + fileName  + ')'"></div>
   <div class="title mt-3">{{ title }}</div>
   <div class="txt mt-3">{{ txt }}</div>
 </div>
