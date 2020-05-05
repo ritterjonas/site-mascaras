@@ -14,11 +14,16 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ExternalSystemsComponent } from './components/external-systems/external-systems.component';
 import { FeaturesBoxComponent } from './components/features-box/features-box.component';
 import { HeaderBannerComponent } from './components/header-banner/header-banner.component';
+import { ScheduleModalComponent } from './components/schedule-modal/schedule-modal.component';
+
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExternalSystemsComponent,
+    ScheduleModalComponent,
     FeaturesBoxComponent,
     HeaderBannerComponent,
     HeaderComponent,
@@ -32,6 +37,8 @@ import { HeaderBannerComponent } from './components/header-banner/header-banner.
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
+    MatDatepickerModule,
+    BrowserAnimationsModule,
     ScrollToModule.forRoot()
   ],
   providers: [],

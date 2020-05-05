@@ -15,14 +15,25 @@
 
 .subtitle {
     color: #282828;
-    font-size: 44px;
+    font-size: 36px;
     line-height: 44px;
     width: 350px;
+    display: block;
+}
+
+.whatsapp {
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 8px;
 }
 
 .txt {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 26px;
     color: #282828;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -32,11 +43,6 @@
     width: 100px;
     height: 2px;
     background-color: #0097d3;
-}
-
-.img {
-    width: 548px;
-    height: 327px;
 }
 
 a {

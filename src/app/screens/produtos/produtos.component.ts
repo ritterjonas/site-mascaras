@@ -10,32 +10,32 @@ export class ProdutosComponent implements OnInit {
     {
       fileName: 'ar1.png',
       title: 'SPLIT HI WALL',
-      txt: 'Equipamento mais comum da categoria,encontra-se facil, em residencias, comercios de pequeno e medio porte'
+      txt: 'Equipamento mais comum da categoria, encontra-se fácil, em residências, comércios de pequeno e médio porte'
     },
     {
       fileName: 'ar1.png',
       title: 'SPLIT CASSETE',
-      txt: 'Pode ser instalado em forro embutido ou no teto, ficando posicionado na parte central do espaço. Possui quatros saidas de ar, podendo ser ajustada individualmente'
+      txt: 'Pode ser instalado em forro embutido ou no teto, ficando posicionado na parte central do ambiente. Possui quatros saídas de ar que permitem ajustes individuais'
     },
     {
       fileName: 'ar1.png',
       title: 'SPLIT PISO-TETO',
-      txt: 'Pode ser instalado tanto no piso, quanto no teto, é mais provavel que você encontre ele suspenso ao teto de um grande salão, ou uma grande loja'
+      txt: 'É um aparelho potente instalado no teto do estabelecimento, é mais provável que você o encontre em grandes salões, grandes lojas ou locais com intenso número de pessoas'
     },
     {
       fileName: 'ar1.png',
       title: 'MULTISPLIT',
-      txt: 'Tem somente uma unidade externa(condensadora) que atende até 05 unidades internas(evaporadoras)'
+      txt: 'Tem somente uma unidade externa (condensadora) que atende mais de uma unidade split interna (evaporadoras)'
     },
     {
       fileName: 'ar1.png',
       title: 'ACJ (Ar condicionado de janela)',
-      txt: 'Muito comum em predios, sua instalação e retirada para manutenção é de esforço minimo'
+      txt: 'Muito comum em prédios, sua instalação e retirada para manutenção é de esforço mínimo'
     },
     {
       fileName: 'ar1.png',
       title: 'FAN COIS',
-      txt: 'Indicado para resfriamento de locais abertos/grandes. Caracterizado como ar central, que passa o ar sob dutos, podemos encontrar este modelo em agências bancarias, shoppings e empresas'
+      txt: 'Indicado para resfriamento de locais abertos/grandes. Caracterizado como ar central, que passa o ar sob dutos, podemos encontrar este modelo em agências bancárias, shoppings e empresas'
     }
   ];
   skip = 0;

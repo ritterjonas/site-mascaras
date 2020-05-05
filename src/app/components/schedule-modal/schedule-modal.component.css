@@ -1,0 +1,75 @@
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.2);
+  z-index: 1000;
+}
+
+.modal-data {
+  z-index: 1001;
+  height: 500px;
+  width: 700px;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: white;
+  box-shadow: 0 10px 10px rgba(0,0,0,.2);
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.modal-buttons {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+}
+
+.modal-buttons .button {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-weight: 600;
+}
+
+.modal-buttons .button.active {
+  background: #303e9f;
+  color: white;
+}
+
+.modal-buttons .button:hover {
+  background: #EFEFEF;
+}
+
+.modal-buttons .button.active:hover {
+  background: #303e9f;
+  opacity: .8;
+}
+
+.hours {
+  padding: 10px;
+}
+
+.hour-item {
+  color: #303e9f;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 2px solid #303e9f;
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 5px;
+  font-weight: 600;
+}
