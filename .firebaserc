@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "climarc-site"
+  },
+  "targets": {
+    "climarc-site": {
+      "hosting": {
+        "climarc-site": [
+          "climarc-site"
+        ]
+      }
+    }
   }
 }

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './/app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './screens/header/header.component';
@@ -13,19 +14,28 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ExternalSystemsComponent } from './components/external-systems/external-systems.component';
 import { FeaturesBoxComponent } from './components/features-box/features-box.component';
-import { HeaderBannerComponent } from './components/header-banner/header-banner.component';
 import { ScheduleModalComponent } from './components/schedule-modal/schedule-modal.component';
 
-import { MatDatepickerModule } from '@angular/material/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { environment } from '../environments/environment';
+import { ScheduleModalAdminComponent } from './components/schedule-modal-admin/schedule-modal-admin.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ExternalSystemsComponent,
     ScheduleModalComponent,
+    ScheduleModalAdminComponent,
     FeaturesBoxComponent,
-    HeaderBannerComponent,
     HeaderComponent,
     ContatoComponent,
     FooterComponent,
@@ -37,11 +47,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
     MatDatepickerModule,
     BrowserAnimationsModule,
-    ScrollToModule.forRoot()
+    FormsModule,
+    ReactiveFormsModule,
+    ScrollToModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
-  providers: [],
+  providers: [
+    { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

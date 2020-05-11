@@ -1,5 +1,5 @@
 <div class="contato-container">
-  <img class="img img-fluid" src="assets/images/1.png" alt="">
+  <img class="img img-fluid" src="assets/images/1.png" alt="" (click)="triggerAdmin()">
   <div class="contato-mobile">
     <div class="title">Fale conosco</div>
     <div class="line mt-3"></div>
@@ -8,5 +8,6 @@
       (19) 99638-2323
     </a>
     <div class="txt mt-2"><a href="climarc@outlook.com.br">climarc@outlook.com.br</a></div>
+    <div class="schedule-button" (click)="showModalChange.emit(true)">AGENDE UMA VISITA</div>
   </div>
 </div>

@@ -4,12 +4,13 @@
         <div *ngIf="scrolled" class="stick-background container"><app-header></app-header></div>
     </div>
     <div class="header-mobile">
-        <app-header></app-header>
+      <app-header></app-header>
     </div>
-    <app-sobre class="anchor" id="home-ancora"></app-sobre>
+    <app-sobre class="anchor" id="home-ancora" [(showModal)]="showModal"></app-sobre>
     <app-produtos id="produtos-ancora"></app-produtos>
-    <app-contato id="contato-ancora"></app-contato>
+    <app-contato id="contato-ancora" [(showModal)]="showModal" (openModal)="openAdminModal()"></app-contato>
     <app-footer></app-footer>
 </div>
 
-<!-- <app-schedule-modal></app-schedule-modal> -->
+<app-schedule-modal [(showModal)]="showModal" *ngIf="showModal"></app-schedule-modal>
+<app-schedule-modal-admin [(showModal)]="showModalAdmin" *ngIf="showModalAdmin"></app-schedule-modal-admin>

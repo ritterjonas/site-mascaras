@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Injectable, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
@@ -8,6 +8,8 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrls: ['./sobre.component.css'],
 })
 export class SobreComponent implements OnInit {
+  @Input() showModal: boolean;
+  @Output() showModalChange = new EventEmitter();
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 

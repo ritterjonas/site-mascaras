@@ -1,7 +1,11 @@
 <div id="transition" class="sobre-container step">
-    <app-header-banner
-      title="AR CONDICIONADO"
-      subtitle="Instalação, Manutenção e Higienização"
-      fileName="2.png">>
-    </app-header-banner>
+  <div class="header-banner-container">
+    <div>
+      <div class="title mt-2">AR CONDICIONADO</div>
+      <div class="line mt-3 mb-4"></div>
+      <div class="title subtitle">Instalação, Manutenção e Higienização</div>
+      <div class="schedule-button" (click)="showModalChange.emit(true)">AGENDE UMA VISITA</div>
+    </div>
+    <img class="img img-fluid" src="assets/images/2.png">
+  </div>
 </div>
