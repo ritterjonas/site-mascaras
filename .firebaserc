@@ -1,14 +1,5 @@
 {
   "projects": {
-    "default": "site-mascaras"
-  },
-  "targets": {
-    "site-mascaras": {
-      "hosting": {
-        "site-mascaras": [
-          "site-mascaras"
-        ]
-      }
-    }
+    "default": "venda-mascaras"
   }
 }
