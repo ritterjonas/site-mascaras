@@ -22,6 +22,8 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { environment } from '../environments/environment';
+import { SobreComponent } from './screens/sobre/sobre.component';
+import { FeaturesBoxComponent } from './components/features-box/features-box.component';
 
 
 @NgModule({
@@ -32,6 +34,8 @@ import { environment } from '../environments/environment';
     FooterComponent,
     HomeComponent,
     ProdutosComponent,
+    SobreComponent,
+    FeaturesBoxComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
