@@ -8,8 +8,6 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  showModal = false;
-  showModalAdmin = false;
   scrolled = false;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
@@ -27,9 +25,4 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  openAdminModal() {
-    this.showModalAdmin = true;
-  }
-
 }

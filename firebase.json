@@ -15,8 +15,8 @@
       ]
     },
     {
-      "target": "climarc-site",
-      "public": "dist/climarc-site",
+      "target": "site-mascaras",
+      "public": "dist/site-mascaras",
       "ignore": [
         "firebase.json",
         "**/.*",

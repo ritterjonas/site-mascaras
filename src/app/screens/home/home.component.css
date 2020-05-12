@@ -3,11 +3,11 @@
     top: 0;
     z-index: 100;
     width: 1110px;
-    box-sizing: content-box; 
+    box-sizing: content-box;
     margin-left: -1000px;
     padding-left: 1000px;
     margin-right: -1000px;
-    padding-right: 1000px; 
+    padding-right: 1000px;
 }
 
 .stick-background {
@@ -15,28 +15,15 @@
     top: 0;
     z-index: 100;
     width: 1110px;
-    box-sizing: content-box; 
+    box-sizing: content-box;
     margin-left: -1000px;
     padding-left: 1000px;
     margin-right: -1000px;
-    padding-right: 1000px; 
+    padding-right: 1000px;
     background-color: white;
 }
 
 .anchor {
     margin-top: -100px;
     padding: 100px;
-}
-
-.header-mobile {
-    display: none;
-}
-
-@media only screen and (max-width: 480px) {
-    .header-desktop {
-        display: none;
-    }
-    .header-mobile {
-        display: flex;
-    }
 }

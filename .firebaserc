@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "climarc-site"
+    "default": "site-mascaras"
   },
   "targets": {
-    "climarc-site": {
+    "site-mascaras": {
       "hosting": {
-        "climarc-site": [
-          "climarc-site"
+        "site-mascaras": [
+          "site-mascaras"
         ]
       }
     }

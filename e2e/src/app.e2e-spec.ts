@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('climarc-site app is running!');
+    expect(page.getTitleText()).toEqual('site-mascaras app is running!');
   });
 
   afterEach(async () => {

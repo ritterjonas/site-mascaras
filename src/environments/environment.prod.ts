@@ -1,13 +1,12 @@
 export const environment = {
   production: true,
   firebaseConfig: {
-    apiKey: 'AIzaSyDvJNzzMDyqNTU_hIt62n7-DAd4T9dzRWA',
-    authDomain: 'climarc-site.firebaseapp.com',
-    databaseURL: 'https://climarc-site.firebaseio.com',
-    projectId: 'climarc-site',
-    storageBucket: 'climarc-site.appspot.com',
-    messagingSenderId: '1012801993730',
-    appId: '1:1012801993730:web:288dfe8128012f3a3c3b1b',
-    measurementId: 'G-7R7STZYY14'
+    apiKey: 'AIzaSyCCfw28wZEGGTioCW3Oo3T0KkNB7UC9tWQ',
+    authDomain: 'venda-mascaras.firebaseapp.com',
+    databaseURL: 'https://venda-mascaras.firebaseio.com',
+    projectId: 'venda-mascaras',
+    storageBucket: 'venda-mascaras.appspot.com',
+    messagingSenderId: '1046627627402',
+    appId: '1:1046627627402:web:8122b44d618fd3c27b9873'
   }
 };

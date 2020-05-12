@@ -1,48 +1,6 @@
-<div class="produtos-container" (window:resize)="onResize($event)">
-    <div class="navigator" (click)="prev()" [class.disabled]="!hasPrev()">&#9001;</div>
-    <app-external-systems class="component"
-        fileName="{{type.fileName}}"
-        title="{{type.title}}"
-        txt="{{type.txt}}" *ngFor="let type of getActives()">
-    </app-external-systems>
-    <div class="navigator" (click)="next()" [class.disabled]="!hasNext()">&#9002;</div>
-</div>
-
-<div class="header-banner-container">
-  <div>
-    <div class="title mt-2">Serviços</div>
-    <div class="line mt-3 mb-4"></div>
-    <div class="title subtitle">Equipe qualificada e experiente pronta para te atender</div>
+<div class="products" id="mascaras-ancora">
+  <div class="product" *ngFor="let product of products">
+    <div class="image" [style.backgroundImage]="'url(https://firebasestorage.googleapis.com/v0/b/venda-mascaras.appspot.com/o/' + product.id + '.jpg?alt=media)'"></div>
+    <div class="name">{{ product.data?.name }}</div>
   </div>
-  <img class="img img-fluid" src="assets/images/3.png">
-</div>
-
-<div class="features-container" id="sobre-ancora">
-  <app-features-box
-      title="Missão"
-      txt="Satisfazer a necessidade do cliente da melhor forma, garantindo excelência no serviço prestado">
-  </app-features-box>
-  <app-features-box
-      title="Visão"
-      txt="Ser a empresa de refrigeração mais admirada pela excêlencia e qualidade dos serviços prestados">
-  </app-features-box>
-  <app-features-box
-      title="Valores"
-      txt="Segurança, Qualidade, Honestidade, Eficiência e Responsabilidade">
-  </app-features-box>
-</div>
-
-<div class="clients">
-  <div class="client" style="background-image: url('assets/images/marcas/brastemp.jpg');"></div>
-  <div class="client" style="background-image: url('assets/images/marcas/carrier.jpg');"></div>
-  <div class="client" style="background-image: url('assets/images/marcas/comfee.jpg');"></div>
-  <div class="client" style="background-image: url('assets/images/marcas/consul.jpg');"></div>
-  <div class="client" style="background-image: url('assets/images/marcas/electrolux.jpg');"></div>
-  <div class="client" style="background-image: url('assets/images/marcas/fujitsu.jpg');"></div>
-  <div class="client" style="background-image: url('assets/images/marcas/gree.jpg');"></div>
-  <div class="client" style="background-image: url('assets/images/marcas/hitachi.jpg');"></div>
-  <div class="client" style="background-image: url('assets/images/marcas/lg.jpg');"></div>
-  <div class="client" style="background-image: url('assets/images/marcas/midea.jpg');"></div>
-  <div class="client" style="background-image: url('assets/images/marcas/samsung.jpg');"></div>
-  <div class="client" style="background-image: url('assets/images/marcas/springer.jpg');"></div>
 </div>
