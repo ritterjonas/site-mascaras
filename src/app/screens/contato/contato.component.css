@@ -72,9 +72,14 @@ a {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
+        padding-right: 30px;
     }
 
     .contato-mobile {
         margin-left: 50px;
+    }
+
+    .title {
+      margin-top: 30px;
     }
 }
